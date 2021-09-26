@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <TextView
+        android:id="@+id/profile_hello"
+        android:layout_width="156dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="52dp"
+        android:text="Harshana"
+        android:textColor="#3CDF7E"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_hello"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:text="Hello,"
+        android:textColor="#3CDF7E"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/profile_hello"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/verifyMsg"
+        android:layout_width="122dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="12dp"
+        android:text="Email Not Verified!"
+        android:textColor="#FD6A6A"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/profile_img1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_hello"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resendCode"
+        android:layout_width="131dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="70dp"
+        android:text="Click Here To Verify."
+        android:textColor="#FD6A6A"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/verifyMsg"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/profile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hello" />
+
+
+    <TextView
+        android:id="@+id/profile_fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/harshana_rajapaksha"
+        android:textColor="#909090"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img1" />
+
+
+    <TextView
+        android:id="@+id/profileTxt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="E-mail"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_fullName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_shape"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/harshanarajapaksha_gmail_com"
+        android:textColor="#909090"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileTxt_email"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/profile_phone"
+        android:layout_width="257dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_shape"
+        android:paddingStart="12dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="@string/_0772615896"
+        android:textColor="#909090"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileTxt_phone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/profileTxt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/phone_number"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_email"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:background="@drawable/button"
+        android:onClick="UpdateProfile"
+        android:padding="0dp"
+        android:paddingTop="4dp"
+        android:text="@string/edit"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="109dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_red"
+        android:onClick="logout"
+        android:padding="0dp"
+        android:paddingTop="4dp"
+        android:text="LOG OUT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_phone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/custom_shape2"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+
+        android:paddingBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/homeImg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:alpha="0.3"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:onClick="Home2"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/homeblack"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/cartimg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:alpha="0.3"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cart"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/homeImg_btn"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/rateImg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:alpha="0.3"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:padding="15dp"
+        android:onClick="homeWishlist"
+        android:scaleType="fitXY"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/cartimg_btn"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/profileImg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_green"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/rateImg_btn"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resetPasswordLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_btn"
+        app:layout_constraintVertical_bias="0.111"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

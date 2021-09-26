@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Products">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="61dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/content_desc_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="ADD PRODUCTS"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/Product_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Product Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enter_product"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/enter_product"
+        android:layout_width="348dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/custom_shape"
+        android:hint="Enter product name"
+        android:importantForAutofill="no"
+        android:includeFontPadding="true"
+        android:inputType="text"
+        android:labelFor="@+id/firstname"
+        android:paddingStart="17dp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/enter_product_price"
+        android:layout_width="348dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/custom_shape"
+        android:hint="Enter product price"
+        android:importantForAutofill="no"
+        android:includeFontPadding="true"
+        android:inputType="text"
+        android:labelFor="@+id/firstname"
+        android:paddingStart="17dp"
+        android:textColor="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_product"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Product Price"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enter_product_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Product Description"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_product_price"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/enter_product_description"
+            android:layout_width="341dp"
+            android:layout_height="138dp"
+            android:background="@drawable/custom_shape"
+            android:gravity="top"
+            android:hint="Enter product description"
+            android:importantForAutofill="no"
+            android:includeFontPadding="true"
+            android:inputType="textMultiLine"
+            android:labelFor="@+id/firstname"
+            android:maxHeight="100dp"
+            android:maxLines="15"
+            android:minLines="1"
+            android:paddingStart="17dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="17dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/cardview_dark_background"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_product_btn"
+        android:layout_width="169dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
+        android:text="ADD PRODUCT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

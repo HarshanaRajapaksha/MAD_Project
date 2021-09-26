@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".whishlist">
+
+
+    <TextView
+        android:id="@+id/textViewWhishList"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:background="@drawable/custom_shape3"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:text="WISHLIST"
+
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="27dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="45dp"
+        android:layout_height="59dp"
+        android:contentDescription="@string/content_desc_logo"
+        android:paddingBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/textViewWhishList"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/Wish_back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FF0000"
+        android:onClick="wishBack"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/back_button_white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewWhishList"
+        app:layout_constraintEnd_toEndOf="@+id/textViewWhishList"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="@+id/textViewWhishList"
+        app:layout_constraintTop_toTopOf="@+id/textViewWhishList"
+        app:layout_constraintVertical_bias="0.476"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutWish"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="344dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/custom_shape2"
+        android:paddingLeft="12dp"
+        android:paddingTop="9dp"
+
+        android:paddingBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/homeImg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:onClick="Home2"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/homeblack"
+        android:alpha="0.3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/cartimg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:alpha="0.3"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cart"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/homeImg_btn"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/rateImg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:onClick="homeWishlist"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/star_green"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/cartimg_btn"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/profileImg_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="12dp"
+        android:alpha="0.3"
+        android:background="#00FF0000"
+        android:contentDescription="TODO"
+        android:onClick="ProfileIcon"
+        android:padding="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/rateImg_btn"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.631"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

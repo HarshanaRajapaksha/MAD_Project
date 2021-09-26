@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "999058792368",
+    "project_id": "team-veterans-mad-app",
+    "storage_bucket": "team-veterans-mad-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999058792368:android:1fbcc204f9ec5360824075",
+        "android_client_info": {
+          "package_name": "com.example.mad_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999058792368-1kkie1pigh4eurnll2r7gna386a57e4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE_dcQh_otPdSQZF5spPQIcOypfPqnMZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999058792368-1kkie1pigh4eurnll2r7gna386a57e4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

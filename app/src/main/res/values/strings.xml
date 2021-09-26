@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MAD_Project</string>
+    <string name="content_desc_logo">logo</string>
+    <string name="content_desc_login" tools:ignore="DuplicateDefinition">LOGIN</string>
+    <string name="content_desc_logintxt2" tools:ignore="DuplicateDefinition">logintxt</string>
+    <string name="content_don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="e_mail">E-mail</string>
+    <string name="donthave">Do not have an account ?</string>
+    <string name="txt2">E-Mail</string>
+    <string name="txt3">Password</string>
+    <string name="hint2">Password</string>
+    <string name="login">Login</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="create">CREATE</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in2">Sign in</string>
+    <string name="harshanarajapaksha_gmail_com">harshanarajapaksha@gmail.com</string>
+    <string name="edit">EDIT</string>
+    <string name="harshana_rajapaksha">Harshana Rajapaksha</string>
+    <string name="_0772615896">0772615896</string>
+    <string name="todo">TODO</string>
+    <string name="enter_first_name">Enter first name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Whish_List_Image_Des">wishListImag</string>
+    <string name="WishList">wishlisT</string>
+    <string name="EmptyWishList">emptyWishlist</string>
+
+</resources>
